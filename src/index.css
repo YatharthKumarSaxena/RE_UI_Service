@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 5px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Code fonts */
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+/* Premium Panel Styling */
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  transition: all 0.2s ease-in-out;
+}
+
+html.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+.glass-panel-hover:hover {
+  border-color: #0d9488;
+  box-shadow: 0 10px 30px rgba(13, 148, 136, 0.12);
+}
+
+html.dark .glass-panel-hover:hover {
+  border-color: rgba(45, 212, 191, 0.4);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Fields Common Style */
+.re-input {
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  color: #0f172a;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.re-input:focus {
+  background-color: #ffffff;
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+  outline: none;
+}
+
+html.dark .re-input {
+  background-color: #030712;
+  border: 1.5px solid #334155;
+  color: #f1f5f9;
+}
+
+html.dark .re-input:focus {
+  background-color: #030712;
+  border-color: #2dd4bf;
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.2);
+}
