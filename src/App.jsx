@@ -79,7 +79,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="min-w-0 flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8">
         {activeTab === 'single' && (
           <SingleClassifier initialData={singleClassifierData} />
         )}
@@ -111,8 +111,8 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-900 bg-white/80 dark:bg-slate-950/80 py-6 mt-auto transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-500">
-          <div className="flex items-center space-x-2">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-500">
+          <div className="flex flex-wrap items-center justify-center gap-x-2">
             <span className="w-2 h-2 rounded-full bg-teal-500" />
             <span className="font-semibold text-slate-700 dark:text-slate-400">RE AI Model Service Frontend</span>
             <span>&bull;</span>
@@ -121,7 +121,7 @@ export default function App() {
             <span className="capitalize font-mono text-[11px] text-teal-600 dark:text-teal-400">{theme} Mode Active</span>
           </div>
           <div className="flex items-center space-x-4">
-            <span className="font-mono text-[11px] text-slate-500">
+            <span className="break-all text-center font-mono text-[11px] text-slate-500 sm:text-left">
               Sample File: /samples/sample_requirements.csv (40 rows)
             </span>
             <button

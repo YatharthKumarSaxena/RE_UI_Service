@@ -163,7 +163,7 @@ export default function DatasetViewer({ onLoadSingleRow, onRunBulkFile }) {
         <div className="absolute right-0 top-0 w-96 h-96 bg-gradient-to-br from-teal-500/10 to-transparent rounded-full blur-3xl pointer-events-none" />
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
           <div>
-            <div className="flex items-center space-x-2.5">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="px-3 py-1 rounded-lg bg-indigo-500/15 text-indigo-800 dark:text-indigo-300 font-mono text-xs font-bold uppercase tracking-wider border border-indigo-500/30">
                 Dataset & Test Files
               </span>

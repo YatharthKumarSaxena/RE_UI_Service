@@ -20,6 +20,24 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+#root {
+  min-width: 0;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .glass-panel {
+    padding: 1rem !important;
+  }
+}
+
 /* Custom scrollbars */
 ::-webkit-scrollbar {
   width: 9px;

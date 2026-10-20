@@ -109,7 +109,7 @@ export default function DataInsights() {
       <div className="glass-panel rounded-2xl p-6 border border-slate-200 dark:border-slate-800 border-l-4 border-l-cyan-500">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="px-2.5 py-1 rounded-md bg-cyan-500/15 text-cyan-800 dark:text-cyan-300 font-mono text-xs font-semibold uppercase tracking-wider border border-cyan-500/30">
                 Data Insights · Training Analytics
               </span>

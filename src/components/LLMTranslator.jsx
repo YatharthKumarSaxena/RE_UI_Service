@@ -95,7 +95,7 @@ export default function LLMTranslator({ onSendToClassifier }) {
     <div className="space-y-6 animate-fadeIn">
       {/* Top Banner */}
       <div className="glass-panel rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-slate-800">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex flex-wrap items-center gap-2">
           <span className="px-3 py-1 rounded-lg bg-teal-500/15 text-teal-800 dark:text-teal-300 font-mono text-xs font-bold uppercase tracking-wider border border-teal-500/30">
             LLM Service (GPT / Groq)
           </span>

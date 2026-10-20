@@ -51,7 +51,7 @@ export default function ModelEvaluation() {
       <div className="glass-panel rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="px-2.5 py-1 rounded-md bg-teal-500/15 text-teal-700 dark:text-teal-300 font-mono text-xs font-semibold uppercase tracking-wider border border-teal-500/30">
                 ML Performance Benchmarks
               </span>
