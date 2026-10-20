@@ -50,7 +50,7 @@ cd Frontend
 npm run dev
 # Vite runs on http://localhost:3000
 ```
-In local development, Vite proxies `/health` and `/re-model-service` requests to `http://127.0.0.1:8083`. Production builds use `https://re-ai-model-service.onrender.com` by default. Set `VITE_BACKEND_URL` at build time to override the backend origin if needed. The backend must allow requests from the deployed frontend origin through CORS.
+In local development, Vite proxies `/health` and `/re-model-service` requests to `http://127.0.0.1:8083`. On Vercel, `vercel.json` rewrites those paths to `https://re-ai-model-service.onrender.com`, so the browser uses same-origin requests and does not need backend CORS access. Update the rewrite destinations if the backend URL changes.
 
 ### 3. Build for Production
 ```bash

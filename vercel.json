@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/health",
+      "destination": "https://re-ai-model-service.onrender.com/health"
+    },
+    {
+      "source": "/re-model-service/:path*",
+      "destination": "https://re-ai-model-service.onrender.com/re-model-service/:path*"
+    }
+  ]
+}

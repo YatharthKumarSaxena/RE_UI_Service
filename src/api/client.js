@@ -1,11 +1,7 @@
 // api/client.js
 import { getAuthHeaders } from '../utils/deviceId';
 
-const BACKEND_ORIGIN = (
-  import.meta.env.VITE_BACKEND_URL
-  ?? (import.meta.env.DEV ? '' : 'https://re-ai-model-service.onrender.com')
-).replace(/\/$/, '');
-const API_BASE = `${BACKEND_ORIGIN}/re-model-service/api/v1`;
+const API_BASE = '/re-model-service/api/v1';
 
 async function handleResponse(response) {
   const contentType = response.headers.get('content-type');
@@ -142,7 +138,7 @@ export const api = {
   // Health check test
   checkBackendHealth: async () => {
     try {
-      const response = await fetch(`${BACKEND_ORIGIN}/health`, { method: 'GET' });
+      const response = await fetch('/health', { method: 'GET' });
       return response.ok;
     } catch {
       return false;
