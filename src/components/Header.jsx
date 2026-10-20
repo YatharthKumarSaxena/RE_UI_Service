@@ -92,7 +92,7 @@ export default function Header({ activeTab, setActiveTab, onOpenDeviceSettings, 
                     : 'bg-amber-400'
               }`} />
               <span className="text-slate-800 dark:text-slate-200">
-                {serverOnline === true ? 'Backend: 8083' : serverOnline === false ? 'Offline (8083)' : 'Connecting...'}
+                {serverOnline === true ? 'Backend: Online' : serverOnline === false ? 'Backend: Offline' : 'Connecting...'}
               </span>
               <RefreshCw className={`w-3.5 h-3.5 text-slate-500 dark:text-slate-400 ${isPinging ? 'animate-spin' : ''}`} />
             </button>
